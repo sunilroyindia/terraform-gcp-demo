@@ -5,3 +5,9 @@ resource "google_storage_bucket" "no-public-access" {
   project        = "Default Project"
   public_access_prevention = "enforced"
 }
+
+variable "GOOGLE_CRED" {
+      type        = string
+      sensitive   = true # Mark as sensitive if it contains sensitive data
+      description = "GCP Authentication"
+    }
