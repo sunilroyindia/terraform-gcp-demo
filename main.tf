@@ -6,6 +6,7 @@ provider "google" {
   region      = var.region
 }
 
+
 resource "google_storage_bucket" "no-public-access" {
   name          = "sunil-project-1986-bucket"
   location      = var.region
